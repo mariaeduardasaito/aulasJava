@@ -1,7 +1,7 @@
 public class GerarPessoas {
     public static void main(String[] args) {
 
-        Pessoa pessoaUm = new Pessoa(62);
+        Pessoa pessoaUm = new Pessoa("Marta",62);
          System.out.println(pessoaUm);
 
         Aluno alunoUm = new Aluno(10, "Mario", 21);
