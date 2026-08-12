@@ -13,6 +13,6 @@ class Aluno extends Pessoa{
     }
     @Override
     public String toString() {
-        return "Aluno{" + "notaFinal=" + notaFinal + ", nome=" + getNome() + ", idade=" + getIdade() + '}';
+        return "Aluno{" + " notaFinal= " + notaFinal + '}' + super.toString();
     }
 }
