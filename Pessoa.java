@@ -20,6 +20,6 @@ class Pessoa {
     }
     @Override
     public String toString() {
-        return "Pessoa {" + "nome=" + nome + ", idade=" + idade + '}';
+        return "Pessoa {" + "nome= " + nome + ", idade= " + idade + '}';
     }
 }
