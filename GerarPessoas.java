@@ -1,0 +1,14 @@
+public class GerarPessoas {
+    public static void main(String[] args) {
+
+        Pessoa pessoaUm = new Pessoa(62);
+         System.out.println(pessoaUm);
+
+        Aluno alunoUm = new Aluno(10, "Mario", 21);
+        System.out.println(alunoUm);
+        alunoUm.setIdade(23);
+        System.out.println("Nova idade do aluno: " + alunoUm.getIdade());
+
+       
+    }
+}
