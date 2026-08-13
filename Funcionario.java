@@ -25,9 +25,6 @@ class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", salario=" + salario +
-                '}';
+        return "Funcionario { " +  "nome= '" + nome + '\'' + ", salario= " + salario + '}';
     }
 }
