@@ -2,31 +2,34 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        ContaBancaria conta1 =
-                new ContaBancaria("Maria", 1000.00);
+        ContaBancaria conta1 = new ContaBancaria("Joao Silva", 1000.0);
+        ContaBancaria conta2 = new ContaBancaria("Maria Souza", 500.0);
 
-        ContaEspecial conta2 =
-                new ContaEspecial("Duda", 500.00, 1000.00);
+        ContaEspecial conta3 = new ContaEspecial("Carlos Pereira", 300.0, 500.0);
+        ContaEspecial conta4 = new ContaEspecial("Ana Lima", 0.0, 1000.0);
 
+        System.out.println("======== Movimentacoes ContaBancaria ========");
+        conta1.depositar(200.0);
+        conta1.sacar(150.0);
+        conta1.sacar(5000.0); 
 
-        System.out.println("CONTA BANCÁRIA");
+        conta2.depositar(100.0);
+        conta2.sacar(700.0); 
 
-        conta1.depositar(500.00);
+        System.out.println();
+        System.out.println("======== Movimentacoes ContaEspecial ========");
+        conta3.depositar(100.0);
+        conta3.sacar(600.0);  
+        conta3.sacar(1000.0);
 
-        conta1.sacar(300.00);
+        conta4.sacar(800.0);  
+        conta4.depositar(50.0);
 
-        conta1.sacar(1500.00);
-
+        System.out.println();
+        System.out.println("======== Extratos ========");
         conta1.extrato();
-
-        System.out.println("\nCONTA ESPECIAL");
-
-        conta2.depositar(200.00);
-
-        conta2.sacar(500.00);
-
-        conta2.sacar(800.00);
-
         conta2.extrato();
+        conta3.extrato();
+        conta4.extrato();
     }
 }
